@@ -1,0 +1,6 @@
+pages\LoginPage.class
+stepDefinitions\LogoutTest.class
+pages\HomePage.class
+TestRunner\TestRunner.class
+pages\LogoutPage.class
+stepDefinitions\LoginTest.class
