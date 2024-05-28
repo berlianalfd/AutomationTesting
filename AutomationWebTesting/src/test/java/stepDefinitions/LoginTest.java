@@ -46,7 +46,6 @@ public class LoginTest {
         Assert.assertEquals(expectedErrorMessage, actualErrorMessage);
     }
 
-
     @Then("I should be redirected to the home page")
     public void verifyRedirectedToHomePage() {
         homePage = new HomePage(driver);

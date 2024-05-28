@@ -1,6 +1,8 @@
 pages\LoginPage.class
 stepDefinitions\LogoutTest.class
+stepDefinitions\MenuTest.class
 pages\HomePage.class
 TestRunner\TestRunner.class
 pages\LogoutPage.class
+pages\MenuPage.class
 stepDefinitions\LoginTest.class
