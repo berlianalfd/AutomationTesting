@@ -5,14 +5,19 @@ import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.MenuPage;
+import pages.AboutMenuPage;
+import org.junit.Assert;
 import static org.junit.Assert.assertTrue;
 
 public class MenuTest {
     private WebDriver driver;
     private LoginPage loginPage;
     private MenuPage menuPage;
+    private HomePage homePage;
+    private AboutMenuPage aboutMenuPage;
 
     @Given("I have launched the browser")
     public void iHaveLaunchedTheBrowser() {
@@ -41,7 +46,6 @@ public class MenuTest {
 
     @When("I tap on the Menu icon available on the top left of the application")
     public void iTapOnTheMenuIconAvailableOnTheTopLeftNavigationBarOfTheApplication() {
-        menuPage = new MenuPage(driver);
         menuPage.clickMenuButton();
     }
 
@@ -53,7 +57,44 @@ public class MenuTest {
         assertTrue("Reset App State menu is not displayed", menuPage.isResetAppMenuDisplayed());
     }
 
-    // Add other steps definitions as needed
+    @And("I should see a Bar containing a list of menus")
+    public void iShouldSeeABarContainingAListOfMenus() {
+        assertTrue("All Items menu is not displayed", menuPage.isAllItemsMenuDisplayed());
+        assertTrue("About menu is not displayed", menuPage.isAboutMenuDisplayed());
+        assertTrue("Logout menu is not displayed", menuPage.isLogoutMenuDisplayed());
+        assertTrue("Reset App State menu is not displayed", menuPage.isResetAppMenuDisplayed());
+    }
+
+    @And("I tap on the {string} menu")
+    public void iTapOnTheMenu(String menuName) {
+        menuPage.clickMenuItem(menuName);
+    }
+
+    @Then("I should be navigated to the dashboard page displaying the product catalog")
+    public void iShouldBeNavigatedToTheDashboardPageDisplayingTheProductCatalog() {
+        homePage = new HomePage(driver);
+        assertTrue(homePage.isListProductDisplayed());
+    }
+
+    @Then("I should be navigated to the page displaying information about the creators of Swag Labs")
+    public void iShouldBeNavigatedToThePageDisplayingInformationAboutTheCreatorsOfSwagLabs() {
+        aboutMenuPage = new AboutMenuPage(driver);
+        assertTrue("About page is not displayed", aboutMenuPage.isAboutPageDisplayed());
+    }
+
+    @Then("I should be directed to the Login page that displays the Username and password fields as before")
+    public void iShouldBeDirectedToTheLoginPageThatDisplaysTheUsernameAndPasswordFieldsAsBefore() {
+        loginPage = new LoginPage(driver);
+        loginPage.isFormLoginDisplayed();
+        Assert.assertEquals("https://www.saucedemo.com/", driver.getCurrentUrl());
+    }
+
+    @Then("I should be navigated to the dashboard page displaying a new catalog of items that can be ordered by customers")
+    public void iShouldBeNavigatedToTheDashboardPageDisplayingANewCatalogOfItemsThatCanBeOrderedByCustomers() {
+        homePage = new HomePage(driver);
+        assertTrue(homePage.isListProductDisplayed());
+    }
+    
 
     @After
     public void tearDown() {
@@ -61,50 +102,4 @@ public class MenuTest {
             driver.quit();
         }
     }
-
-    // @And("I have been navigated to the login page")
-    // public void userNavigatedToLoginPage() {
-    //     driver.get("https://www.saucedemo.com/");
-    // }
-
-    // @And("I successfully logged in to the Swag Labs application")
-    // public void userHasSuccessfullyLoggedInToTheSwagLabsApplication() {
-    //     loginPage.enterUsername("standard_user");
-    //     loginPage.enterPassword("secret_sauce");
-    //     loginPage.clickLoginButton();
-    //     menuPage = new MenuPage(driver);
-    // }
-
-    // @And("I on the dashboard page displaying the list of catalog items")
-    // public void userIsOnTheDashboardPageDisplayingTheListOfCatalogItems() {
-    //     assertTrue(menuPage.isMenuButtonDisplayed());
-    // }
-
-    // @When("I click on the Menu icon located at the top left \\(Navigation Bar)")
-    // public void userClicksOnTheMenuIconLocatedAtTheTopLeftNavigationBar() {
-    //     menuPage.clickMenuButton();
-    // }
-
-    // @Then("I should see a Bar containing a list of menu options")
-    // public void userShouldSeeABarContainingAListOfMenuOptions() {
-    //     assertTrue(menuPage.isAllItemsMenuDisplayed());
-    //     assertTrue(menuPage.isAboutMenuDisplayed());
-    //     assertTrue(menuPage.isLogoutMenuDisplayed());
-    //     assertTrue(menuPage.isResetAppMenuDisplayed());
-    // }
-
-    // @And("the Bar should display the following menu options: All Items, About, Logout, Reset App State")
-    // public void theBarShouldDisplayTheFollowingMenuOptions() {
-    //     assertTrue(menuPage.isAllItemsMenuDisplayed());
-    //     assertTrue(menuPage.isAboutMenuDisplayed());
-    //     assertTrue(menuPage.isLogoutMenuDisplayed());
-    //     assertTrue(menuPage.isResetAppMenuDisplayed());
-    // }
-
-    // @After
-    // public void closeBrowser() {
-    //     if (driver != null) {
-    //         driver.quit();
-    //     }
-    // }
 }

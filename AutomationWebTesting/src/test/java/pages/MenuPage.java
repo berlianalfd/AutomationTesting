@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,5 +50,24 @@ public class MenuPage {
 
     public boolean isMenuButtonDisplayed() {
         return menuButton.isDisplayed();
+    }
+
+    public void clickMenuItem(String menuName) {
+        switch (menuName.toLowerCase()) {
+            case "all items":
+                allItemsMenu.click();
+                break;
+            case "about":
+                aboutMenu.click();
+                break;
+            case "logout":
+                logoutMenu.click();
+                break;
+            case "reset app state":
+                resetAppMenu.click();
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid menu item: " + menuName);
+        }
     }
 }

@@ -28,7 +28,7 @@ public class HomePage {
 
     public boolean isListProductDisplayed() {
         return listProduct.isDisplayed();
-    }
+    } 
 
 }
 
