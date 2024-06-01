@@ -41,6 +41,18 @@ public class ProductDetailPage {
         return productImage.isDisplayed();
     }
 
+    public boolean isProductNameDisplay(){
+        return productName.isDisplayed();
+    }
+
+    public boolean isProductDescriptionDisplay(){
+        return productDescription.isDisplayed();
+    }
+
+    public boolean isProductPriceDisplay(){
+        return productPrice.isDisplayed();
+    }
+
     public String getProductName() {
         return productName.getText();
     }
