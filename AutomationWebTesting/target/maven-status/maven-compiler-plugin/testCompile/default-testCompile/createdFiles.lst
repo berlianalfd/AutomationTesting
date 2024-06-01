@@ -1,7 +1,0 @@
-pages\LoginPage.class
-pages\AboutMenuPage.class
-stepDefinitions\ProductDetailTest.class
-TestRunner\TestRunner.class
-pages\LogoutPage.class
-pages\MenuPage.class
-pages\ProductDetailPage.class
