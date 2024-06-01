@@ -158,6 +158,6 @@ public class CreateUserTest {
         .contentType("application/json")
         .body(requestBody)
         .post(endpoint);
-        }
+    }
 
 }
