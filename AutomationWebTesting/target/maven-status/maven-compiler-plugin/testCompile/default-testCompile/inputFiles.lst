@@ -1,11 +1,13 @@
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\pages\ProductDetailPage.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\pages\HomePage.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\ProductDetailTest.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\TestRunner\TestRunner.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\MenuTest.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\pages\LoginPage.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\pages\LogoutPage.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\LoginTest.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\LogoutTest.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\pages\MenuPage.java
-D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\AutomationTesting\AutomationWebTesting\src\test\java\pages\AboutMenuPage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\pages\MenuPage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\LoginTest.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\LogoutTest.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\MenuTest.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\ProductDetailTest.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\pages\HomePage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\pages\LogoutPage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\pages\ProductDetailPage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\pages\AboutMenuPage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\pages\LoginPage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\pages\CheckoutPage.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\stepDefinitions\CheckoutTest.java
+E:\Semester 6\Pengujian PL\Praktek\tubes\AutomationTesting\AutomationWebTesting\src\test\java\TestRunner\TestRunner.java
