@@ -1,12 +1,1 @@
-test\java\WEB\TestRunner\TestRunnerWEB.class
-pages\LoginPage.class
-pages\HomePage.class
 API\TestRunner\TestRunnerAPI.class
-stepDefinitions\LoginTest.class
-pages\AboutMenuPage.class
-stepDefinitions\ProductDetailTest.class
-stepDefinitions\LogoutTest.class
-stepDefinitions\MenuTest.class
-pages\LogoutPage.class
-pages\MenuPage.class
-pages\ProductDetailPage.class
