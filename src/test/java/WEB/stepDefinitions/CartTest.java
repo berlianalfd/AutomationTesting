@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import WEB.pages.CartPage;
+import WEB.pages.CheckoutPage;
 import WEB.pages.HomePage;
 import WEB.pages.LoginPage;
 import io.cucumber.java.After;
@@ -18,6 +19,7 @@ public class CartTest {
     private CartPage cartPage;
     private LoginPage loginPage;
     private HomePage homePage;
+    private CheckoutPage checkoutPage;
 
     @Given("I have opened the browser.")
     public void openBrowser() {
@@ -108,10 +110,11 @@ public class CartTest {
         cartPage.clickCheckoutButton();
     }
 
-    // @Then("I am redirected to the checkout page displaying the checkout information form")
-    // public void redirectedToCheckoutPage() {
-        
-    // }
+    @Then("I am redirected to the checkout page displaying the checkout information form")
+    public void redirectedToCheckoutPage() {
+        checkoutPage = new CheckoutPage(driver);
+        Assert.assertTrue("Checkout page  isn't displayed", checkoutPage.checkoutInformainForm());
+    }
 
     @After
     public void closeBrowser() {
