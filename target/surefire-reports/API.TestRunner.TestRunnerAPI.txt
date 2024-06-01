@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: API.TestRunner.TestRunnerAPI
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.313 s <<< FAILURE! - in API.TestRunner.TestRunnerAPI
-Delete user with invalid user ID and valid app-id(Negative Testing for Delete User API)  Time elapsed: 0.353 s  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.132 s <<< FAILURE! - in API.TestRunner.TestRunnerAPI
+Delete user with invalid user ID and valid app-id(Negative Testing for Delete User API)  Time elapsed: 0.428 s  <<< FAILURE!
 java.lang.AssertionError: Expected status code 404 expected:<404> but was:<400>
 
