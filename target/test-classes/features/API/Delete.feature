@@ -1,6 +1,7 @@
 Feature: Negative Testing for Delete User API
 
-  Scenario Outline: Delete user without app-id in Headers
+  @TC0.3.1
+  Scenario: Delete user without app-id in Headers
     Given I have an user ID "<userID>"
     And I have an app ID "<app-id>"
     When I send a DELETE request to the user endpoint 
@@ -11,7 +12,8 @@ Feature: Negative Testing for Delete User API
       | userID                   | app-id              | expectedStatusCode | expectedError    |
       | 60d0fe4f5311236168a10a03 |                     | 403                | APP_ID_MISSING   |
 
- Scenario Outline: Delete user with valid user ID and without app-id
+  @TC0.3.2
+  Scenario: Delete user with valid user ID and without app-id
     Given I have an user ID "<userID>"
     And I have an app ID "<app-id>"
     When I send a DELETE request to the user endpoint 
@@ -22,7 +24,8 @@ Feature: Negative Testing for Delete User API
       | userID                   | app-id               | expectedStatusCode | expectedError    |
       | 60d0fe4f5311236168a10a03 |                      | 403                | APP_ID_MISSING   |
 
- Scenario Outline: Delete user with valid user ID and invalid app-id
+  @TC0.3.3
+  Scenario: Delete user with valid user ID and invalid app-id
     Given I have an user ID "<userID>"
     And I have an app ID "<app-id>"
     When I send a DELETE request to the user endpoint 
@@ -32,8 +35,9 @@ Feature: Negative Testing for Delete User API
     Examples:
       | userID                   | app-id                       |expectedStatusCode | expectedError      |
       | 60d0fe4f5311236168a10a03 | 662e2bdcbb70a769232593d7     |403                | APP_ID_NOT_EXIST   |
-
- Scenario Outline: Delete user with invalid user ID and invalid app-id
+  
+  @TC0.3.4
+  Scenario: Delete user with invalid user ID and invalid app-id
     Given I have an user ID "<userID>"
     And I have an app ID "<app-id>"
     When I send a DELETE request to the user endpoint
@@ -43,8 +47,9 @@ Feature: Negative Testing for Delete User API
     Examples:
       | userID                   | app-id                       |expectedStatusCode | expectedError      |
       | 60d0fe4f5311236168a109KK | 662e2bdcbb70a769232593d7     |403                | APP_ID_NOT_EXIST   |
-
- Scenario Outline: Delete user with invalid user ID and valid app-id
+  
+  @TC0.3.5
+  Scenario Outline: Delete user with invalid user ID and valid app-id
     Given I have an user ID "<userID>"
     And I have an app ID "<app-id>"
     When I send a DELETE request to the user endpoint 
