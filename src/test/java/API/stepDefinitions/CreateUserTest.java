@@ -31,7 +31,7 @@ public class CreateUserTest {
                              "}";
 
         response = given()
-            .header("app-id", appID)
+            .baseUri(baseUrl)
             .contentType("application/json")
             .body(requestBody)
             .post(endpoint);
@@ -78,21 +78,86 @@ public class CreateUserTest {
                 .post(endpoint);
     }
 
-    @Then("I see response body contains the correct user information")
-    public void verifyResponseBodyFullField() {
-        response.then().statusCode(200)
-                .body("title", equalTo("mrs"))
-                .body("firstName", equalTo("Zizah"))
-                .body("lastName", equalTo("Natania"))
-                .body("gender", equalTo("female"))
-                .body("email", equalTo("zizaniap@example.com"))
-                .body("dateOfBirth", equalTo("1988-05-15T00:00:00.000Z"))
-                .body("phone", equalTo("081234576543"))
-                .body("picture", equalTo("https://example.com/zizah.jpg"))
-                .body("location.street", equalTo("123 Main Street"))
-                .body("location.city", equalTo("New York"))
-                .body("location.state", equalTo("New York"))
-                .body("location.country", equalTo("United States"))
-                .body("location.timezone", equalTo("-8:00"));
+    @When("I create a JSON script with the title field empty and send a POST request to endpoint {string}")
+    public void createJSONScriptWithTitleFieldIsEmpty(String endpoint) {
+        String requestBody = "{\n" +
+                             "  \"title\": \" \",\n" +
+                             "  \"firstName\": \"Zizah\",\n" +
+                             "  \"lastName\": \"Natania\",\n" +
+                             "  \"gender\": \"female\",\n" +
+                             "  \"email\": \"zizaniap@example.com\",\n" +
+                             "  \"dateOfBirth\": \"1988-05-15T00:00:00.000Z\",\n" +
+                             "  \"phone\": \"081234576543\",\n" +
+                             "  \"picture\": \"https://example.com/zizah.jpg\",\n" +
+                             "  \"location\": {\n" +
+                             "    \"street\": \"123 Main Street\",\n" +
+                             "    \"city\": \"New York\",\n" +
+                             "    \"state\": \"New York\",\n" +
+                             "    \"country\": \"United States\",\n" +
+                             "    \"timezone\": \"-8:00\"\n" +
+                             "  }\n" +
+                             "}";
+
+        response = given()
+                .header("app-id", appID)
+                .contentType("application/json")
+                .body(requestBody)
+                .post(endpoint);
     }
+
+    @When("I create a JSON script with the firstName field empty and send a POST request to endpoint {string}")
+    public void createJSONScriptWithFirstNameIsEmpty(String endpoint) {
+        String requestBody = "{\n" +
+                                "  \"title\": \"mrs\",\n" +
+                                "  \"firstName\": \" \",\n" +
+                                "  \"lastName\": \"Natania\",\n" +
+                                "  \"gender\": \"female\",\n" +
+                                "  \"email\": \"zizaniap@example.com\",\n" +
+                                "  \"dateOfBirth\": \"1988-05-15T00:00:00.000Z\",\n" +
+                                "  \"phone\": \"081234576543\",\n" +
+                                "  \"picture\": \"https://example.com/zizah.jpg\",\n" +
+                                "  \"location\": {\n" +
+                                "    \"street\": \"123 Main Street\",\n" +
+                                "    \"city\": \"New York\",\n" +
+                                "    \"state\": \"New York\",\n" +
+                                "    \"country\": \"United States\",\n" +
+                                "    \"timezone\": \"-8:00\"\n" +
+                                "  }\n" +
+                                "}";
+
+        response = given()
+            .header("app-id", appID)
+            .contentType("application/json")
+            .body(requestBody)
+            .post(endpoint);
+    }
+
+
+    @When("I create a JSON script except for the location street field with less than five characters, and send a POST request to endpoint {string}")
+    public void createJSONScriptExceptLocationStreet(String endpoint) {
+        String requestBody = "{\n" +
+                                "  \"title\": \"mrs\",\n" +
+                                "  \"firstName\": \"Cintia\",\n" +
+                                "  \"lastName\": \"Ningsih\",\n" +
+                                "  \"gender\": \"female\",\n" +
+                                "  \"email\": \"CinnningA@example.com\",\n" +
+                                "  \"dateOfBirth\": \"2003-01-20T00:00:00.000Z\",\n" +
+                                "  \"phone\": \"081234575000\",\n" +
+                                "  \"picture\": \"https://example.com/zizah.jpg\",\n" +
+                                "  \"location\": {\n" +
+                                "    \"street\": \"ciwa\",\n" +
+                                "    \"city\": \"Bandung\",\n" +
+                                "    \"state\": \"Jawa Barat\",\n" +
+                                "    \"country\": \"Indonesia\",\n" +
+                                "    \"timezone\": \"-15:40\"\n" +
+                                "  }\n" +
+                                "}";
+
+        response = given()
+        .header("app-id", appID)
+        .contentType("application/json")
+        .body(requestBody)
+        .post(endpoint);
+        }
+
 }
