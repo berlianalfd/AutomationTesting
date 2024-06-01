@@ -44,6 +44,9 @@ public class CheckoutPage {
     @FindBy(className = "summary_info")
     private WebElement summaryInfo;
 
+    @FindBy(className ="checkout_info")
+    private WebElement checkoutInformationForm;
+
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -103,6 +106,10 @@ public class CheckoutPage {
 
     public boolean summaryInfo(){
         return summaryInfo.isDisplayed();
+    }
+
+    public boolean checkoutInformainForm(){
+        return checkoutInformationForm.isDisplayed();
     }
 }
 
