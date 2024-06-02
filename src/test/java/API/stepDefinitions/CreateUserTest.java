@@ -95,4 +95,5 @@ public class CreateUserTest {
                 .body("location.country", equalTo("United States"))
                 .body("location.timezone", equalTo("-8:00"));
     }
+
 }
