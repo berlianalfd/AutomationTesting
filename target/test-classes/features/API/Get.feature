@@ -47,8 +47,8 @@ Feature: API method GET user data
             Examples:
         | userID                   | app-id                    | 
         | 60d0fe4f5311236168a109KK | 662e2bdcbb70a769232593d7  |
-@TC0.1.5
-    Scenario: Added valid application id in the header and registered user id in the system 
+@TC0.1.6
+    Scenario: Added valid application id in the header and not registered user id in the system 
         Given I have added user ID "<userID>"
         And I have an application ID "<app-id>"
         When I get a JSON script and send a GET request to endpoint "/user/<userID>"

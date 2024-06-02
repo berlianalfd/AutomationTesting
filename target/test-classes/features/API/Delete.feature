@@ -48,7 +48,7 @@ Feature: Negative Testing for Delete User API
       | userID                   | app-id                       |expectedStatusCode | expectedError      |
       | 60d0fe4f5311236168a109KK | 662e2bdcbb70a769232593d7     |403                | APP_ID_NOT_EXIST   |
   
-  @TC0.3.5
+  @TC0.3.6
   Scenario Outline: Delete user with invalid user ID and valid app-id
     Given I have an user ID "<userID>"
     And I have an app ID "<app-id>"

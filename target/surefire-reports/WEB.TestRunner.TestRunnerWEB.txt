@@ -1,31 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: WEB.TestRunner.TestRunnerWEB
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 234.423 s <<< FAILURE! - in WEB.TestRunner.TestRunnerWEB
-Successful end-to-end flow from login to logout with checkout(End-to-end test from login to logout with successful checkout)  Time elapsed: 6.119 s  <<< FAILURE!
-java.lang.AssertionError: All Items menu is not displayed
-
-Unsuccessful login with Username and Password unregistered in the database(Login Feature)  Time elapsed: 8.32 s  <<< FAILURE!
+Tests run: 26, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 256.824 s <<< FAILURE! - in WEB.TestRunner.TestRunnerWEB
+Unsuccessful login with Username and Password unregistered in the database(Login Feature)  Time elapsed: 9.781 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[Username and password do not match any user in this service!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
 
-Unsuccessful login with password and username is empty(Login Feature)  Time elapsed: 7.448 s  <<< FAILURE!
+Unsuccessful login with password and username is empty(Login Feature)  Time elapsed: 8.475 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
 
-Unsuccessful login with username is registered in the database but the password not registered in the database(Login Feature)  Time elapsed: 8.33 s  <<< FAILURE!
+Unsuccessful login with username is registered in the database but the password not registered in the database(Login Feature)  Time elapsed: 8.565 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[You need Password!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
 
-Unsuccesfull login with username is registered in the database but the password is empty(Login Feature)  Time elapsed: 8.999 s  <<< FAILURE!
+Unsuccesfull login with username is registered in the database but the password is empty(Login Feature)  Time elapsed: 10.559 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[You need Password!]> but was:<[Epic sadface: Password is required]>
 
-Unsuccesfull login with password is registered in the database but the username not registered in the database(Login Feature)  Time elapsed: 8.101 s  <<< FAILURE!
+Unsuccesfull login with password is registered in the database but the username not registered in the database(Login Feature)  Time elapsed: 9.85 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[Username and password do not match any User in  this service!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
 
-Unsuccessful login with password is registered in the database but the username is empty(Login Feature)  Time elapsed: 8.912 s  <<< FAILURE!
+Unsuccessful login with password is registered in the database but the username is empty(Login Feature)  Time elapsed: 8.52 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[You need Username!]> but was:<[Epic sadface: Username is required]>
 
-Unsuccesfull login with username is not registered in the database but the password is empty(Login Feature)  Time elapsed: 8.6 s  <<< FAILURE!
+Unsuccesfull login with username is not registered in the database but the password is empty(Login Feature)  Time elapsed: 9.529 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Password is required]>
 
-Unsuccessful login with password not registered in the database and the username is empty(Login Feature)  Time elapsed: 9.077 s  <<< FAILURE!
+Unsuccessful login with password not registered in the database and the username is empty(Login Feature)  Time elapsed: 9.065 s  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
 

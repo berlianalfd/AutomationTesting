@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="WEB.TestRunner.TestRunnerWEB" time="234.423" tests="26" errors="0" skipped="0" failures="9">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="WEB.TestRunner.TestRunnerWEB" time="256.824" tests="26" errors="0" skipped="0" failures="8">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\BERLIA~1\AppData\Local\Temp\surefire13938535766426774852\surefirebooter17365885001319941842.jar C:\Users\Berliana Elfada\AppData\Local\Temp\surefire13938535766426774852 2024-06-02T16-35-12_014-jvmRun1 surefire14043555373771873290tmp surefire_015334870652596979753tmp"/>
+    <property name="sun.java.command" value="C:\Users\BERLIA~1\AppData\Local\Temp\surefire13186638330396369651\surefirebooter9302803006369871229.jar C:\Users\Berliana Elfada\AppData\Local\Temp\surefire13186638330396369651 2024-06-03T00-45-15_687-jvmRun1 surefire705226561350487823tmp surefire_011897223289659354864tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="WEB.TestRunner.TestRunnerWEB"/>
     <property name="surefire.test.class.path" value="D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\TUBES\AutomationTesting\target\test-classes;D:\BER\KAIST\SEM6\PPL3\PRAKTIK\TUBES\TUBES\AutomationTesting\target\classes;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\cucumber-java\7.17.0\cucumber-java-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\cucumber-core\7.17.0\cucumber-core-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\cucumber-gherkin\7.17.0\cucumber-gherkin-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.17.0\cucumber-gherkin-messages-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\query\12.1.2\query-12.1.2.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\datatable\7.17.0\datatable-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\cucumber-plugin\7.17.0\cucumber-plugin-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\docstring\7.17.0\docstring-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Berliana Elfada\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Berliana Elfada\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Berliana Elfada\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Berliana Elfada\.m2\repository\io\cucumber\cucumber-junit\7.17.0\cucumber-junit-7.17.0.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Berliana Elfada\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Berliana Elfada\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Berliana Elfada\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Berliana Elfada\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Berliana Elfada\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Berliana Elfada\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Berliana Elfada\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Berliana Elfada\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Berliana Elfada\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Berliana Elfada\.m2\repository\net\masterthought\cucumber-reporting\5.4.0\cucumber-reporting-5.4.0.jar;C:\Users\Berliana Elfada\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\Berliana Elfada\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\Berliana Elfada\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\Berliana Elfada\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.1\jackson-datatype-jsr310-2.10.1.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\Berliana Elfada\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Berliana Elfada\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\Berliana Elfada\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Berliana Elfada\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\Berliana Elfada\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\Berliana Elfada\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\Berliana Elfada\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Berliana Elfada\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Berliana Elfada\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Berliana Elfada\.m2\repository\io\github\bonigarcia\webdrivermanager\5.8.0\webdrivermanager-5.8.0.jar;C:\Users\Berliana Elfada\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\Berliana Elfada\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\Berliana Elfada\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Berliana Elfada\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Berliana Elfada\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Berliana Elfada\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\Berliana Elfada\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Berliana Elfada\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\commons\commons-compress\1.26.1\commons-compress-1.26.1.jar;C:\Users\Berliana Elfada\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Berliana Elfada\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\Berliana Elfada\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Berliana Elfada\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Berliana Elfada\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Berliana Elfada\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Berliana Elfada\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\Berliana Elfada\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\Berliana Elfada\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\Berliana Elfada\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\Berliana Elfada\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Berliana Elfada\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Berliana Elfada\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Berliana Elfada\.m2\repository\io\rest-assured\json-schema-validator\4.3.3\json-schema-validator-4.3.3.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Berliana Elfada\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Berliana Elfada\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Berliana Elfada\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Berliana Elfada\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Berliana Elfada\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Berliana Elfada\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\BERLIA~1\AppData\Local\Temp\surefire13938535766426774852\surefirebooter17365885001319941842.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\BERLIA~1\AppData\Local\Temp\surefire13186638330396369651\surefirebooter9302803006369871229.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -57,49 +57,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Verifying empty cart page" classname="Cart Feature" time="12.982"/>
-  <testcase name="Verify the cart page when clicking the Continue Shopping button" classname="Cart Feature" time="8.653"/>
-  <testcase name="Verify the cart page when clicking the Checkout button with items in the cart" classname="Cart Feature" time="8.103"/>
-  <testcase name="Pressing the Continue button on the Checkout: your Information page with all fields filled in using valid data" classname="Checkout Feature" time="8.23"/>
-  <testcase name="Pressing the Cancel button on the Checkout: Your Information page with all fields filled" classname="Checkout Feature" time="8.932"/>
-  <testcase name="Pressing the Cancel button on the Checkout: Your Information page with all fields missing" classname="Checkout Feature" time="9.172"/>
-  <testcase name="Adding one product to cart when not yet adding any products" classname="Dashboard Feature" time="8.075"/>
-  <testcase name="Interacting with the dashboard by clicking on a product name" classname="Dashboard Feature" time="7.979"/>
-  <testcase name="Interacting with the dashboard by clicking on a product image" classname="Dashboard Feature" time="9.189"/>
-  <testcase name="Successful end-to-end flow from login to logout with checkout" classname="End-to-end test from login to logout with successful checkout" time="6.119">
-    <failure message="All Items menu is not displayed" type="java.lang.AssertionError">java.lang.AssertionError: All Items menu is not displayed
-</failure>
-    <system-out><![CDATA[
-@TC0.6.1
-Scenario: Successful end-to-end flow from login to logout with checkout                                                                                                                                                               &amp#27;[90m# src/test/resources/features/WEB/EndToEnd.feature:4&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI launch the application and log in with username &amp#27;[0m&amp#27;[32m&amp#27;[1m"standard_user"&amp#27;[0m&amp#27;[32m and password &amp#27;[0m&amp#27;[32m&amp#27;[1m"secret_sauce"&amp#27;[0m                                                                                                                                 &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_launch_the_application_and_log_in_with_username_and_password(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI select the product &amp#27;[0m&amp#27;[32m&amp#27;[1m"Sauce Labs Backpack"&amp#27;[0m&amp#27;[32m and add it to the cart&amp#27;[0m                                                                                                                                                              &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_select_the_product_and_add_it_to_the_cart(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI proceed to the checkout page&amp#27;[0m                                                                                                                                                                                                  &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_proceed_to_the_checkout_page()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI fill out the checkout form with first name &amp#27;[0m&amp#27;[32m&amp#27;[1m"Lebron"&amp#27;[0m&amp#27;[32m, last name &amp#27;[0m&amp#27;[32m&amp#27;[1m"James"&amp#27;[0m&amp#27;[32m, and postal code &amp#27;[0m&amp#27;[32m&amp#27;[1m"40121"&amp#27;[0m                                                                                                                               &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_fill_out_the_checkout_form_with_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI verify the checkout overview details: payment info &amp#27;[0m&amp#27;[32m&amp#27;[1m"Payment Information:"&amp#27;[0m&amp#27;[32m, sauce card &amp#27;[0m&amp#27;[32m&amp#27;[1m"SauceCard #31337"&amp#27;[0m&amp#27;[32m, shipping info &amp#27;[0m&amp#27;[32m&amp#27;[1m"Shipping Information:"&amp#27;[0m&amp#27;[32m, delivery method &amp#27;[0m&amp#27;[32m&amp#27;[1m"Free Pony Express Delivery!"&amp#27;[0m&amp#27;[32m, and total price &amp#27;[0m&amp#27;[32m&amp#27;[1m"Price Total"&amp#27;[0m &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_verify_the_checkout_overview_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the finish button to complete the order&amp#27;[0m                                                                                                                                                                                 &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_click_the_finish_button_to_complete_the_order()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click the back home button for back to homepage&amp#27;[0m                                                                                                                                                                               &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_click_the_back_home_button_for_back_to_homepage()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI click on Menu icon available on the top left of the application&amp#27;[0m                                                                                                                                                               &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.IclickonMenuiconavailableonthetopleftoftheapplication()&amp#27;[0m
-  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI should see a Bar containing a menus&amp#27;[0m                                                                                                                                                                                           &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.iShouldSeeABarContainingAMenus()&amp#27;[0m
-      &amp#27;[31mjava.lang.AssertionError: All Items menu is not displayed
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at WEB.stepDefinitions.EndToEndTest.iShouldSeeABarContainingAMenus(EndToEndTest.java:109)
-	at âœ½.I should see a Bar containing a menus(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/EndToEnd.feature:13)
-&amp#27;[0m
-  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click the &amp#27;[0m&amp#27;[36m&amp#27;[1m"Logout"&amp#27;[0m&amp#27;[36m menu&amp#27;[0m                                                                                                                                                                                                       &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.iClickTheMenu(java.lang.String)&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should be redirected to the login page with username and password fields displayed&amp#27;[0m                                                                                                                                           &amp#27;[90m# WEB.stepDefinitions.EndToEndTest.i_should_be_redirected_to_the_login_page_with_username_and_password_fields_displayed()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 52107
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 02, 2024 4:36:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="Successful login with password and the username is registered in the database" classname="Login Feature" time="7.867"/>
-  <testcase name="Unsuccessful login with Username and Password unregistered in the database" classname="Login Feature" time="8.32">
+  <testcase name="Verifying empty cart page" classname="Cart Feature" time="14.438"/>
+  <testcase name="Verify the cart page when clicking the Continue Shopping button" classname="Cart Feature" time="9.599"/>
+  <testcase name="Verify the cart page when clicking the Checkout button with items in the cart" classname="Cart Feature" time="9.454"/>
+  <testcase name="Pressing the Continue button on the Checkout: your Information page with all fields filled in using valid data" classname="Checkout Feature" time="9.435"/>
+  <testcase name="Pressing the Cancel button on the Checkout: Your Information page with all fields filled" classname="Checkout Feature" time="8.555"/>
+  <testcase name="Pressing the Cancel button on the Checkout: Your Information page with all fields missing" classname="Checkout Feature" time="9.354"/>
+  <testcase name="Adding one product to cart when not yet adding any products" classname="Dashboard Feature" time="7.76"/>
+  <testcase name="Interacting with the dashboard by clicking on a product image" classname="Dashboard Feature" time="10.449"/>
+  <testcase name="Interacting with the dashboard by clicking on a product name" classname="Dashboard Feature" time="10.554"/>
+  <testcase name="Successful end-to-end flow from login to logout with checkout" classname="End-to-end test from login to logout with successful checkout" time="6.797"/>
+  <testcase name="Successful login with password and the username is registered in the database" classname="Login Feature" time="10.762"/>
+  <testcase name="Unsuccessful login with Username and Password unregistered in the database" classname="Login Feature" time="9.781">
     <failure message="expected:&lt;[Username and password do not match any user in this service!]&gt; but was:&lt;[Epic sadface: Username and password do not match any user in this service]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Username and password do not match any user in this service!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
 ]]></failure>
     <system-out><![CDATA[
@@ -117,21 +86,21 @@ Scenario: Unsuccessful login with Username and Password unregistered in the data
 	at âœ½.I should see the message "Username and password do not match any user in this service!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:20)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 21827
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 11251
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:36:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 41121
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 18143
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:36:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Unsuccessful login with password and username is empty" classname="Login Feature" time="7.448">
+  <testcase name="Unsuccessful login with password and username is empty" classname="Login Feature" time="8.475">
     <failure message="expected:&lt;[You need Username &amp; Password!]&gt; but was:&lt;[Epic sadface: Username is required]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
 ]]></failure>
     <system-out><![CDATA[
@@ -149,21 +118,21 @@ Scenario: Unsuccessful login with password and username is empty                
 	at âœ½.I should see the message "You need Username & Password!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:28)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 53518
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 16054
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:36:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 61917
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 59240
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:19 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Unsuccessful login with username is registered in the database but the password not registered in the database" classname="Login Feature" time="8.33">
+  <testcase name="Unsuccessful login with username is registered in the database but the password not registered in the database" classname="Login Feature" time="8.565">
     <failure message="expected:&lt;[You need Password!]&gt; but was:&lt;[Epic sadface: Username and password do not match any user in this service]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[You need Password!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
 ]]></failure>
     <system-out><![CDATA[
@@ -181,21 +150,21 @@ Scenario: Unsuccessful login with username is registered in the database but the
 	at âœ½.I should see the message "You need Password!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:36)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 14119
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 58268
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 23942
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 41885
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Unsuccesfull login with username is registered in the database but the password is empty" classname="Login Feature" time="8.999">
+  <testcase name="Unsuccesfull login with username is registered in the database but the password is empty" classname="Login Feature" time="10.559">
     <failure message="expected:&lt;[You need Password!]&gt; but was:&lt;[Epic sadface: Password is required]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[You need Password!]> but was:<[Epic sadface: Password is required]>
 ]]></failure>
     <system-out><![CDATA[
@@ -213,21 +182,21 @@ Scenario: Unsuccesfull login with username is registered in the database but the
 	at âœ½.I should see the message "You need Password!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:44)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 59910
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 11287
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 44237
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 7728
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:38 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Unsuccesfull login with password is registered in the database but the username not registered in the database" classname="Login Feature" time="8.101">
+  <testcase name="Unsuccesfull login with password is registered in the database but the username not registered in the database" classname="Login Feature" time="9.85">
     <failure message="expected:&lt;[Username and password do not match any User in  this service!]&gt; but was:&lt;[Epic sadface: Username and password do not match any user in this service]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Username and password do not match any User in  this service!]> but was:<[Epic sadface: Username and password do not match any user in this service]>
 ]]></failure>
     <system-out><![CDATA[
@@ -245,21 +214,21 @@ Scenario: Unsuccesfull login with password is registered in the database but the
 	at âœ½.I should see the message "Username and password do not match any User in  this service!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:52)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 59045
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 63781
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 29920
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 31365
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:47 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Unsuccessful login with password is registered in the database but the username is empty" classname="Login Feature" time="8.912">
+  <testcase name="Unsuccessful login with password is registered in the database but the username is empty" classname="Login Feature" time="8.52">
     <failure message="expected:&lt;[You need Username!]&gt; but was:&lt;[Epic sadface: Username is required]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[You need Username!]> but was:<[Epic sadface: Username is required]>
 ]]></failure>
     <system-out><![CDATA[
@@ -277,21 +246,21 @@ Scenario: Unsuccessful login with password is registered in the database but the
 	at âœ½.I should see the message "You need Username!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:60)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 64268
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 47748
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 52967
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 10824
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:47:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Unsuccesfull login with username is not registered in the database but the password is empty" classname="Login Feature" time="8.6">
+  <testcase name="Unsuccesfull login with username is not registered in the database but the password is empty" classname="Login Feature" time="9.529">
     <failure message="expected:&lt;[You need Username &amp; Password!]&gt; but was:&lt;[Epic sadface: Password is required]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Password is required]>
 ]]></failure>
     <system-out><![CDATA[
@@ -309,21 +278,21 @@ Scenario: Unsuccesfull login with username is not registered in the database but
 	at âœ½.I should see the message "You need Username & Password!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:68)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 52331
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 37658
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:48:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 33048
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 42047
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:48:05 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Unsuccessful login with password not registered in the database and the username is empty" classname="Login Feature" time="9.077">
+  <testcase name="Unsuccessful login with password not registered in the database and the username is empty" classname="Login Feature" time="9.065">
     <failure message="expected:&lt;[You need Username &amp; Password!]&gt; but was:&lt;[Epic sadface: Username is required]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[You need Username & Password!]> but was:<[Epic sadface: Username is required]>
 ]]></failure>
     <system-out><![CDATA[
@@ -341,25 +310,25 @@ Scenario: Unsuccessful login with password not registered in the database and th
 	at âœ½.I should see the message "You need Username & Password!" on the login form(file:///D:/BER/KAIST/SEM6/PPL3/PRAKTIK/TUBES/TUBES/AutomationTesting/src/test/resources/features/WEB/Login.feature:76)
 &amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 44821
+    <system-err><![CDATA[Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 24984
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:48:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 61908
+Starting ChromeDriver 125.0.6422.141 (4b1e83937122185343ba92e909b021f307c719ca-refs/branch-heads/6422@{#1186}) on port 21539
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2024 4:37:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 03, 2024 12:48:14 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="Successful logout" classname="Logout Feature" time="9.196"/>
-  <testcase name="Navigating to All Items Menu" classname="Menu Navigation Feature" time="9.327"/>
-  <testcase name="Navigating to About Menu" classname="Menu Navigation Feature" time="14.13"/>
-  <testcase name="Navigating to Reset App State Menu" classname="Menu Navigation Feature" time="9.663"/>
-  <testcase name="Displaying the Product Detail Page" classname="Detail Produk Features" time="9.573"/>
-  <testcase name="Adding a product to the cart by pressing the Add to cart button" classname="Detail Produk Features" time="8.467"/>
-  <testcase name="Removing a product from the cart by pressing the Remove button" classname="Detail Produk Features" time="10.01"/>
+  <testcase name="Successful logout" classname="Logout Feature" time="9.785"/>
+  <testcase name="Navigating to All Items Menu" classname="Menu Navigation Feature" time="8.778"/>
+  <testcase name="Navigating to About Menu" classname="Menu Navigation Feature" time="19.36"/>
+  <testcase name="Navigating to Reset App State Menu" classname="Menu Navigation Feature" time="11.151"/>
+  <testcase name="Displaying the Product Detail Page" classname="Detail Produk Features" time="7.997"/>
+  <testcase name="Adding a product to the cart by pressing the Add to cart button" classname="Detail Produk Features" time="8.71"/>
+  <testcase name="Removing a product from the cart by pressing the Remove button" classname="Detail Produk Features" time="8.407"/>
 </testsuite>
