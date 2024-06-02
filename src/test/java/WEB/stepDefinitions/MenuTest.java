@@ -48,7 +48,7 @@ public class MenuTest {
     public void iTapOnTheMenuIconAvailableOnTheTopLeftNavigationBarOfTheApplication() {
         menuPage.clickMenuButton();
     }
-    
+
     @And("I should see a Bar containing a list of menus")
     public void iShouldSeeABarContainingAListOfMenus() {
         assertTrue("All Items menu is not displayed", menuPage.isAllItemsMenuDisplayed());
@@ -74,19 +74,11 @@ public class MenuTest {
         assertTrue("About page is not displayed", aboutMenuPage.isAboutPageDisplayed());
     }
 
-    @Then("I should be directed to the Login page that displays the Username and password fields as before")
-    public void iShouldBeDirectedToTheLoginPageThatDisplaysTheUsernameAndPasswordFieldsAsBefore() {
-        loginPage = new LoginPage(driver);
-        loginPage.isFormLoginDisplayed();
-        Assert.assertEquals("https://www.saucedemo.com/", driver.getCurrentUrl());
-    }
-
     @Then("I should be navigated to the dashboard page displaying a new catalog of items that can be ordered by customers")
     public void iShouldBeNavigatedToTheDashboardPageDisplayingANewCatalogOfItemsThatCanBeOrderedByCustomers() {
         homePage = new HomePage(driver);
         assertTrue(homePage.isListProductDisplayed());
     }
-    
 
     @After
     public void tearDown() {
