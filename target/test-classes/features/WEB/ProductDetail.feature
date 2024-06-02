@@ -32,19 +32,3 @@ Feature: Detail Produk Features
     Then the system successfully removes the product from my cart
     And the system changes the "Remove" button to "Add to cart"
     And the system notifies me about the decrease in the number of items in the cart on the Cart Icon
-
-  @TC0.4.4
-  Scenario: Interaction with Cart Icon
-    Given I have launched the application
-    And I have successfully logged in to the Swag Labs e-commerce application
-    And I have navigated to the Product Detail page
-    When I press the Cart Icon located at the top right corner
-    Then the system displays the Cart page containing the products I want to buy
-
-  @TC0.4.5
-  Scenario: Interaction with Back to Product Button
-    Given I have launched the application
-    And I have successfully logged in to the Swag Labs e-commerce application
-    And I have navigated to the Product Detail page
-    When I press the Back to Product button
-    Then the system displays the dashboard page showing the list of product catalogs

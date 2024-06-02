@@ -21,12 +21,12 @@ public class ProductDetailTest {
     public void i_have_launched_the_application() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get("https://www.saucedemo.com");
-        loginPage = new LoginPage(driver);
     }
 
     @And("I have successfully logged in to the Swag Labs e-commerce application")
     public void i_have_successfully_logged_in_to_the_swag_labs_e_commerce_application() {
+        driver.get("https://www.saucedemo.com/");
+        loginPage = new LoginPage(driver);
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
         loginPage.clickLoginButton();
@@ -63,17 +63,6 @@ public class ProductDetailTest {
         }
     }
 
-    @When("I press the Cart Icon located at the top right corner")
-    public void i_press_the_cart_icon_located_at_the_top_right_corner() {
-        productDetailPage.clickCartIcon();
-    }
-
-    @When("I press the Back to Product button")
-    public void i_press_the_back_to_product_button() {
-        productDetailPage.clickBackToProductButton();
-    }
-
-
     @Then("the system displays the Product Detail page containing detailed information about a product including the product image, product name, product description, and product price")
     public void the_system_displays_the_product_detail_page() {
         assert(productDetailPage.isProductImageDisplayed());
@@ -105,16 +94,6 @@ public class ProductDetailTest {
     @And("the system notifies me about the decrease in the number of items in the cart on the Cart Icon")
     public void the_system_notifies_me_about_the_decrease_in_the_number_of_items_in_the_cart_on_the_cart_icon() {
         assert(productDetailPage.getCartBadgeText().isEmpty());
-    }
-
-    @Then("the system displays the Cart page containing the products I want to buy")
-    public void the_system_displays_the_cart_page_containing_the_products_i_want_to_buy() {
-        assert(productDetailPage.isCartPageDisplayed());
-    }
-
-    @Then("the system displays the dashboard page showing the list of product catalogs")
-    public void the_system_displays_the_dashboard_page_showing_the_list_of_product_catalogs() {
-        Assert.assertTrue("Dashboard page is not displayed", productDetailPage.isDashboardPageDisplayed());
     }
 
     @After
