@@ -34,4 +34,4 @@ Feature: Cart Feature
         And I have clicked on the cart icon on the Dashboard page
         And I am on the cart page
         When I click the Checkout button
-        # Then I am redirected to the checkout page displaying the checkout information form
+        Then I am redirected to the checkout page displaying the checkout information form
