@@ -14,7 +14,7 @@ Feature: Cart Feature
         And I see a button to continue shopping, namely "Continue Shopping"
         And I see a button to checkout, namely "Checkout"
 
-    @TC0.2.2
+    @TC0.2.3
     Scenario: Verify the cart page when clicking the Continue Shopping button
         Given I have opened the browser.
         And I have opened the Swag Labs application URL.
@@ -25,7 +25,7 @@ Feature: Cart Feature
         When I click button Continue Shopping
         Then I am redirected to the dashboard page displaying the product catalog list
 
-    @TC0.2.3
+    @TC0.2.5
     Scenario: Verify the cart page when clicking the Checkout button with items in the cart
         Given I have opened the browser.
         And I have opened the Swag Labs application URL.
