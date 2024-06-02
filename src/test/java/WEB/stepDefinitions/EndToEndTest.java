@@ -1,7 +1,7 @@
 package WEB.stepDefinitions;
 
-// import WEB.pages.CartPage;
-// import WEB.pages.CheckoutPage;
+import WEB.pages.CartPage;
+import WEB.pages.CheckoutPage;
 import WEB.pages.HomePage;
 import WEB.pages.LoginPage;
 import WEB.pages.MenuPage;
@@ -28,8 +28,8 @@ public class EndToEndTest {
     private LoginPage loginPage;
     private HomePage homePage;
     private ProductDetailPage productDetailPage;
-    // private CartPage cartPage;
-    // private CheckoutPage checkoutPage;
+    private CartPage cartPage;
+    private CheckoutPage checkoutPage;
     private MenuPage menuPage;
 
     @Before
@@ -39,8 +39,8 @@ public class EndToEndTest {
         loginPage = new LoginPage(driver);
         homePage = new HomePage(driver);
         productDetailPage = new ProductDetailPage(driver);
-        // cartPage = new CartPage(driver);
-        // checkoutPage = new CheckoutPage(driver);
+        cartPage = new CartPage(driver);
+        checkoutPage = new CheckoutPage(driver);
         menuPage = new MenuPage(driver);
         driver.get("https://www.saucedemo.com/");
     }
@@ -62,42 +62,42 @@ public class EndToEndTest {
         productDetailPage.clickAddToCartButton();
     }
 
-    // @And("I proceed to the checkout page")
-    // public void i_proceed_to_the_checkout_page() {
-    //     homePage.clickIconCart();
-    //     assertTrue(cartPage.getTitleCartPage().contains("Your Cart"));
-    //     cartPage.clickCheckoutButton();
-    //     assertTrue(checkoutPage.checkoutInformainForm());
-    // }
+    @And("I proceed to the checkout page")
+    public void i_proceed_to_the_checkout_page() {
+        homePage.clickIconCart();
+        assertTrue(cartPage.getTitleCartPage().contains("Your Cart"));
+        cartPage.clickCheckoutButton();
+        assertTrue(checkoutPage.checkoutInformainForm());
+    }
 
-    // @And("I fill out the checkout form with first name {string}, last name {string}, and postal code {string}")
-    // public void i_fill_out_the_checkout_form_with_first_name_last_name_and_postal_code(String firstName, String lastName, String postalCode) {
-    //     checkoutPage.enterFirstName(firstName);
-    //     checkoutPage.enterLastName(lastName);
-    //     checkoutPage.enterPostalCode(postalCode);
-    //     checkoutPage.clickContinueButton();
-    //     assertTrue(checkoutPage.isCheckoutOverviewPage());
-    // }
+    @And("I fill out the checkout form with first name {string}, last name {string}, and postal code {string}")
+    public void i_fill_out_the_checkout_form_with_first_name_last_name_and_postal_code(String firstName, String lastName, String postalCode) {
+        checkoutPage.enterFirstName(firstName);
+        checkoutPage.enterLastName(lastName);
+        checkoutPage.enterPostalCode(postalCode);
+        checkoutPage.clickContinueButton();
+        assertTrue(checkoutPage.isCheckoutOverviewPage());
+    }
 
-    // @Then("I verify the checkout overview details: payment info {string}, sauce card {string}, shipping info {string}, delivery method {string}, and total price {string}")
-    // public void i_verify_the_checkout_overview_details(String paymentInfo, String sauceCard, String shippingInfo, String freePony, String priceTotal) {
-    //     assertEquals(paymentInfo, checkoutPage.getPaymentInformationText());
-    //     assertEquals(sauceCard, checkoutPage.getSauceCardText());
-    //     assertEquals(shippingInfo, checkoutPage.getShippingInformationText());
-    //     assertEquals(freePony, checkoutPage.getFreePonyText());
-    //     assertEquals(priceTotal, checkoutPage.getPriceTotalText());
-    //     assertTrue(checkoutPage.summaryInfo());
-    // }
+    @Then("I verify the checkout overview details: payment info {string}, sauce card {string}, shipping info {string}, delivery method {string}, and total price {string}")
+    public void i_verify_the_checkout_overview_details(String paymentInfo, String sauceCard, String shippingInfo, String freePony, String priceTotal) {
+        assertEquals(paymentInfo, checkoutPage.getPaymentInformationText());
+        assertEquals(sauceCard, checkoutPage.getSauceCardText());
+        assertEquals(shippingInfo, checkoutPage.getShippingInformationText());
+        assertEquals(freePony, checkoutPage.getFreePonyText());
+        assertEquals(priceTotal, checkoutPage.getPriceTotalText());
+        assertTrue(checkoutPage.summaryInfo());
+    }
 
-    // // @And("I click the finish button to complete the order")
-    // // public void i_click_the_finish_button_to_complete_the_order() {
-    // //     checkoutPage.clickFinishButton();
-    // // }
+    @And("I click the finish button to complete the order")
+    public void i_click_the_finish_button_to_complete_the_order() {
+        checkoutPage.clickFinishButton();
+    }
 
-    // // @And("I click the back home button for back to homepage")
-    // // public void i_click_the_back_home_button_for_back_to_homepage() {
-    // //     checkoutPage.clickBackToHomePageButton();
-    // // }
+    @And("I click the back home button for back to homepage")
+    public void i_click_the_back_home_button_for_back_to_homepage() {
+        checkoutPage.clickBackToHomePageButton();
+    }
 
     @And("I click on Menu icon available on the top left of the application")
     public void IclickonMenuiconavailableonthetopleftoftheapplication() {

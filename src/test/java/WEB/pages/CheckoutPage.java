@@ -47,6 +47,12 @@ public class CheckoutPage {
     @FindBy(className ="checkout_info")
     private WebElement checkoutInformationForm;
 
+    @FindBy(id = "finish")
+    private WebElement finishButton;
+
+    @FindBy(id = "back-to-products")
+    private WebElement backToHomePageButton;
+
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -68,6 +74,14 @@ public class CheckoutPage {
         continueButton.click();
     }
 
+    public void clickFinishButton() {
+        finishButton.click();
+    }
+
+    public void clickBackToHomePageButton() {
+        backToHomePageButton.click();
+    }
+    
     public boolean isCheckoutOverviewPage() {
         return driver.getCurrentUrl().contains("checkout-step-two.html");
     }

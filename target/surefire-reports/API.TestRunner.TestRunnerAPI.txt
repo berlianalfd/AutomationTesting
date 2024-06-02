@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: API.TestRunner.TestRunnerAPI
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 11.64 s <<< FAILURE! - in API.TestRunner.TestRunnerAPI
+Delete user with invalid user ID and valid app-id(Negative Testing for Delete User API)  Time elapsed: 0.379 s  <<< FAILURE!
+java.lang.AssertionError: Expected status code 404 expected:<404> but was:<400>
+
+Added valid application id in the header and registered user id in the system(API method GET user data)  Time elapsed: 0.411 s  <<< FAILURE!
+java.lang.AssertionError: expected:<404> but was:<400>
+
+Changed all the data in the user table including the email data using the wrong app-id(API method PUT user data)  Time elapsed: 0.329 s  <<< FAILURE!
+java.lang.AssertionError: expected:<402> but was:<403>
+
